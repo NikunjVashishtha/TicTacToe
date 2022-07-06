@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+
+<body>
+    <div id="gameScreen">
+        <table id="board">
+            <tr class="row1">
+                <td class="square" id="square1"></td>
+                <td class="square" id="square2"></td>
+                <td class="square" id="square3"></td>
+            </tr>
+            <tr class="row2">
+                <td class="square" id="square4"></td>
+                <td class="square" id="square5"></td>
+                <td class="square" id="square6"></td>
+            </tr>
+            <tr class="row3">
+                <td class="square" id="square7"></td>
+                <td class="square" id="square8"></td>
+                <td class="square" id="square9"></td>
+            </tr>
+        </table>
+        <p id="rough" style="position: absolute; margin-top: 40%; font-size: 15px;"></p>
+    </div>
+
+    <p id="winner" class="text">Winner: </p>
+    <div id="controls">
+    </div>
+    <div id="center">
+        <div id="contSwitch">
+            <p id="playWithStatus">Play with Computer: ON</p>
+            <label class="switch">
+                <input type="checkbox" id="playWith" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div id="contSwitch">
+            <p id="playAsStatus">Play as: X</p>
+            <label class="switch">
+                <input type="checkbox" id="playAs" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <button id="resetBtn" type="button">Reset</button>
+</body>
+
+</html>

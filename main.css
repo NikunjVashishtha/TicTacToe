@@ -1,0 +1,120 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    color: #fff;
+    background: linear-gradient(120deg, #ff68ca, #3f00ff) no-repeat center center/cover;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+#gameScreen, #center, #controls, #controls_1, #controls_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls_1, #controls_2 {
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* Board */
+#board {
+    border: 2px solid #fff;
+    border-collapse: collapse;
+}
+
+/* Squares */
+.square {
+    border: 2px solid #fff;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Reset Button */
+#resetBtn {
+    display: block;
+    margin: 14px auto;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #bfbdbd;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#resetBtn:hover {
+    background: #d6d6d6;
+}
+
+/* Winner Text */
+#winner {
+    text-align: center;
+}
+
+/* Miscellaneous */
+.text { font-size: 30px; }
+.radio_check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Status Text */
+#playWithStatus, #playAsStatus {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+/* Switch Styles */
+.switch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+    margin-right: 1rem;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #2196F3;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px;
+    left: 30px; bottom: 4px;
+    background: #fff;
+    transition: .4s;
+    border-radius: 50%;
+}
+.switch input:not(:checked) + .slider {
+    background: #ccc;
+}
+.switch input:not(:checked) + .slider:before {
+    left: 4px;
+}
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#rough {
+    position: absolute;
+    margin-top: 40%;
+    font-size: 15px;
+}
